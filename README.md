@@ -34,4 +34,4 @@ You can view the live website at the following link:
 
 If you have any questions or want to get in touch, please feel free to reach out via email.
 
-**Email:** `gauravkumaramtics@gmail.com`
+**Email:** [gauravkumaramtics@gmail.com](mailto:gauravkumaramtics@gmail.com)
