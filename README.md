@@ -4,7 +4,7 @@ This repository contains the source code for my personal portfolio website. The 
 
 ---
 
-## 🚀 Live Preview
+## Live Preview
 
 You can view the live website at the following link:
 
@@ -12,7 +12,7 @@ You can view the live website at the following link:
 
 ---
 
-## ✨ Features
+## Features
 
 * **Fully Responsive Design:** Adapts to all screen sizes, from mobile to desktop.
 * **Dark/Light Mode:** Includes a theme toggle for user viewing preference.
@@ -22,7 +22,7 @@ You can view the live website at the following link:
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **HTML5**
 * **Tailwind CSS**
@@ -30,7 +30,7 @@ You can view the live website at the following link:
 
 ---
 
-## 📫 Contact
+## 📧 Contact
 
 If you have any questions or want to get in touch, please feel free to reach out via email.
 
