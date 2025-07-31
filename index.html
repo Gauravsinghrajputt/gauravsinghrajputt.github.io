@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Gaurav Singh Rajput - Cybersecurity student portfolio showcasing skills, projects, and achievements">
+    <meta name="keywords"
+        content="cybersecurity, student, portfolio, ethical hacking, network security, Gaurav Singh Rajput">
+    <meta name="author" content="Gaurav Singh Rajput">
+    <title>Gaurav Singh Rajput | Cybersecurity Student</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: '#4F46E5',
+                            dark: '#7C3AED'
+                        },
+                        secondary: {
+                            light: '#10B981',
+                            dark: '#059669'
+                        },
+                        accent: {
+                            light: '#F59E0B',
+                            dark: '#D97706'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .card {
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        #theme-toggle:checked~.toggle-dot {
+            transform: translateX(100%);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200 min-h-screen flex flex-col">
+    <nav
+        class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary-light dark:text-primary-dark">Gaurav<span
+                    class="text-accent-light dark:text-accent-dark">.</span></a>
+            <div class="flex items-center space-x-4">
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="hover:text-primary-light dark:hover:text-primary-dark transition">Home</a>
+                    <a href="#about" class="hover:text-primary-light dark:hover:text-primary-dark transition">About</a>
+                    <a href="#experience"
+                        class="hover:text-primary-light dark:hover:text-primary-dark transition">Experience</a>
+                    <a href="#projects"
+                        class="hover:text-primary-light dark:hover:text-primary-dark transition">Projects</a>
+                    <a href="/resume/index.html"
+                        class="hover:text-primary-light dark:hover:text-primary-dark transition">Resume</a>
+                    <a href="#contact"
+                        class="hover:text-primary-light dark:hover:text-primary-dark transition">Contact</a>
+                </div>
+                <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="theme-toggle" class="sr-only">
+                    <div class="w-12 h-6 bg-gray-200 dark:bg-gray-700 rounded-full transition">
+                        <div class="toggle-dot absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition"></div>
+                    </div>
+                    <span class="ml-2 hidden sm:inline">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:inline"></i>
+                    </span>
+                </label>
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white dark:bg-gray-800 px-4 pb-4 border-t border-gray-200 dark:border-gray-700">
+            <div class="flex flex-col space-y-2">
+                <a href="#home" class="hover:text-primary-light dark:hover:text-primary-dark transition py-2">Home</a>
+                <a href="#about" class="hover:text-primary-light dark:hover:text-primary-dark transition py-2">About</a>
+                <a href="#experience"
+                    class="hover:text-primary-light dark:hover:text-primary-dark transition py-2">Experience</a>
+                <a href="#projects"
+                    class="hover:text-primary-light dark:hover:text-primary-dark transition py-2">Projects</a>
+                <a href="/resume/index.html"
+                    class="hover:text-primary-light dark:hover:text-primary-dark transition py-2">Resume</a>
+                <a href="#contact"
+                    class="hover:text-primary-light dark:hover:text-primary-dark transition py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="py-20 px-4">
+            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span
+                            class="text-primary-light dark:text-primary-dark">Gaurav Singh Rajput</span></h1>
+                    <h2 class="text-2xl md:text-3xl mb-6">B.Tech Cybersecurity Student</h2>
+                    <p class="text-lg mb-8 text-gray-600 dark:text-gray-300">A cybersecurity-focused student skilled in
+                        vulnerability assessment, penetration testing, and network analysis, dedicated to building
+                        secure and resilient digital systems.</p>
+                    <div class="flex space-x-4">
+                        <a href="#projects"
+                            class="bg-primary-light dark:bg-primary-dark text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition shadow-lg">View
+                            Projects</a>
+                        <a href="#contact"
+                            class="border-2 border-primary-light dark:border-primary-dark text-primary-light dark:text-primary-dark px-6 py-3 rounded-lg font-medium hover:bg-primary-light/10 dark:hover:bg-primary-dark/10 transition">Contact
+                            Me</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div
+                            class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary-light to-accent-light dark:from-primary-dark dark:to-accent-dark p-1">
+                            <div
+                                class="bg-white dark:bg-gray-800 w-full h-full rounded-full flex items-center justify-center overflow-hidden">
+                                <img src="/profile-image.jpg" alt="A profile photo of Gaurav Singh Rajput"
+                                    class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute -bottom-4 -right-4 bg-secondary-light dark:bg-secondary-dark text-white px-4 py-2 rounded-lg shadow-lg">
+                            <span class="font-bold">Securing Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 px-4 bg-gray-100 dark:bg-gray-700/30">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">About <span
+                        class="text-primary-light dark:text-primary-dark">Me</span></h2>
+                <div class="max-w-3xl mx-auto text-center">
+                    <p class="text-lg mb-6">
+                        I'm a B.Tech Cybersecurity student at UKA Tarsadia University with a passion for building secure
+                        digital environments. My expertise lies in vulnerability assessment, penetration testing, and
+                        network analysis. With hands-on experience as a ReactJS Developer and Desktop Support Engineer,
+                        I enjoy applying my skills to solve real-world challenges and actively participate in CTF
+                        competitions to stay sharp.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-16 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Technical <span
+                        class="text-primary-light dark:text-primary-dark">Skills</span></h2>
+                <div class="max-w-4xl mx-auto space-y-6">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-lg mb-3 text-primary-light dark:text-primary-dark">Security Tools</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Burp Suite</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Fortify</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Wireshark</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Nmap</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Netcat</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Nessus</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Acunetix</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Nexpose</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Qualys
+                                Guard</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Reverse
+                                engineering</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Metasploit</span>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-lg mb-3 text-primary-light dark:text-primary-dark">Development &
+                            Scripting</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">CSS</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">ReactJS</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Flutter</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">C++</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">ASP.NET</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Shell</span>
+                            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Go-Lang</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                            <h3 class="font-bold text-lg mb-3 text-primary-light dark:text-primary-dark">Technologies
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Docker</span>
+                                <span
+                                    class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Kubernetes</span>
+                                <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">IPSEC</span>
+                                <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">SSL</span>
+                                <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">SSH</span>
+                                <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">VPN</span>
+                                <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">F5</span>
+                            </div>
+                        </div>
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                            <h3 class="font-bold text-lg mb-3 text-primary-light dark:text-primary-dark">Operating
+                                Systems & Networking</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Windows</span>
+                                <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Ubuntu</span>
+                                <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Kali
+                                    Linux</span>
+                                <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">macOS</span>
+                                <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">TCP/IP</span>
+                                <span
+                                    class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">Firewall</span>
+                                <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">IDS/IPS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-16 px-4 bg-gray-100 dark:bg-gray-700/30">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Professional <span
+                        class="text-primary-light dark:text-primary-dark">Experience</span></h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg card">
+                        <h3 class="text-xl font-bold">ReactJS Developer</h3>
+                        <p class="text-md font-semibold text-primary-light dark:text-primary-dark mb-2">Krtya
+                            Technology, Surat (Jan - Jul 2024)</p>
+                        <p class="text-gray-600 dark:text-gray-300">Built responsive user interfaces using ReactJS and
+                            optimized application performance through the use of reusable components, hooks, lazy
+                            loading, and REST API integration.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg card">
+                        <h3 class="text-xl font-bold">Data Researcher / Analyst</h3>
+                        <p class="text-md font-semibold text-primary-light dark:text-primary-dark mb-2">GodfatherR
+                            Solution (Dec 2024 - Mar 2025)</p>
+                        <p class="text-gray-600 dark:text-gray-300">Collected large sets of data for USA-based clients,
+                            verified each entry thoroughly to ensure accuracy, and entered the approved data into Excel
+                            for internal records.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg card">
+                        <h3 class="text-xl font-bold">Desktop Support Engineer (Third Party Work)</h3>
+                        <p class="text-md font-semibold text-primary-light dark:text-primary-dark mb-2">Clients included
+                            Gujarat Gas, Aditya Birla Jewellery, HPCL, Iffco Tokio, SIDBI Bank, Ambuja Cements</p>
+                        <p class="text-gray-600 dark:text-gray-300">Provided technical assistance and troubleshooting
+                            for hardware, software, and network issues. Handled server room operations and performance
+                            analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-16 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">My <span
+                        class="text-primary-light dark:text-primary-dark">Projects</span></h2>
+                <p class="text-center text-lg text-gray-600 dark:text-gray-300 mb-12">Here are some of my cybersecurity
+                    projects that showcase my skills and knowledge</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div
+                        class="card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 flex flex-col">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f454681d-522e-477d-ba31-a71a2ea261dc.png"
+                                alt="Dashboard showing security analysis of a DeFi protocol with vulnerability heatmap"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-2">DeFi Protocol Security Audit</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">A full security assessment of a
+                                decentralized exchange, including economic attack simulation.</p>
+                            <div class="text-right mt-auto">
+                                <a href="https://github.com/Gauravsinghrajputt" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center space-x-2 text-accent-light dark:text-accent-dark hover:text-primary-light dark:hover:text-primary-dark transition">
+                                    <span class="font-semibold">View on</span>
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 flex flex-col">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/618c7190-0548-4eda-b4c8-818bced7ce87.png"
+                                alt="Multiple virtual machine screens showing different forensic analysis tools running"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-2">DFIR Incident Simulator Toolkit</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">A VirtualBox-based incident
+                                response training environment with pre-configured VMs.</p>
+                            <div class="text-right mt-auto">
+                                <a href="https://github.com/Gauravsinghrajputt" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center space-x-2 text-accent-light dark:text-accent-dark hover:text-primary-light dark:hover:text-primary-dark transition">
+                                    <span class="font-semibold">View on</span>
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 flex flex-col">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/855ed815-30da-4e56-8208-dfca97371a28.png"
+                                alt="Terminal output showing Slither static analysis of a Solidity contract with vulnerability highlights"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-2">Custom Slither Audit Framework</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">A Slither-based framework to
+                                detect 30+ vulnerability patterns with custom DeFi detectors.</p>
+                            <div class="text-right mt-auto">
+                                <a href="https://github.com/Gauravsinghrajputt" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center space-x-2 text-accent-light dark:text-accent-dark hover:text-primary-light dark:hover:text-primary-dark transition">
+                                    <span class="font-semibold">View on</span>
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 flex flex-col">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2bcfd701-aeff-492c-8885-7f120f8107dc.png"
+                                alt="Dashboard interface showing network security scans with color-coded threat levels and vulnerability reports"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-2">Network Vulnerability Scanner</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">A Python-based tool that scans
+                                networks for vulnerabilities and generates comprehensive reports.</p>
+                            <div class="text-right mt-auto">
+                                <a href="https://github.com/Gauravsinghrajputt" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center space-x-2 text-accent-light dark:text-accent-dark hover:text-primary-light dark:hover:text-primary-dark transition">
+                                    <span class="font-semibold">View on</span>
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 flex flex-col">
+                        <div
+                            class="h-48 overflow-hidden p-4 flex items-center justify-center bg-gray-100 dark:bg-gray-800">
+                            <img src="https://cdn.prod.website-files.com/669f86daf4451c75fdffecee/67d3e3d7e9b2c3822e28c339_uem.svg"
+                                alt="Cyber Risk and Compliance Dashboard icon"
+                                class="max-w-full max-h-full object-contain">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-2">Cyber Risk & Compliance Dashboard</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">A React-based dashboard
+                                visualizing risk metrics and compliance status to prioritize remediation.</p>
+                            <div class="text-right mt-auto">
+                                <a href="https://github.com/Gauravsinghrajputt" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center space-x-2 text-accent-light dark:text-accent-dark hover:text-primary-light dark:hover:text-primary-dark transition">
+                                    <span class="font-semibold">View on</span>
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 flex flex-col">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ef24a1a7-8970-414a-8115-ef1b785a5446.png"
+                                alt="Code comparison showing vulnerable and patched versions of a smart contract"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-2">Smart Contract Vulnerability Database</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">A curated collection of 50+
+                                real-world smart contract vulnerabilities with explanations.</p>
+                            <div class="text-right mt-auto">
+                                <a href="https://github.com/Gauravsinghrajputt" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center space-x-2 text-accent-light dark:text-accent-dark hover:text-primary-light dark:hover:text-primary-dark transition">
+                                    <span class="font-semibold">View on</span>
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 flex flex-col">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dbf7ac92-4213-41a4-8196-4ed5cdf79f12.png"
+                                alt="3D visualization of a network with red flashing nodes indicating detected intrusion attempts and security alerts"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-2">Intrusion Detection System</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">A real-time network monitoring
+                                tool that detects and alerts on suspicious activities.</p>
+                            <div class="text-right mt-auto">
+                                <a href="https://github.com/Gauravsinghrajputt" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center space-x-2 text-accent-light dark:text-accent-dark hover:text-primary-light dark:hover:text-primary-dark transition">
+                                    <span class="font-semibold">View on</span>
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 flex flex-col">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1eabdb8a-be95-46c8-a3d9-6d72d4bc1983.png"
+                                alt="Illustration of a secure password manager interface with encryption visualization and biometric authentication options"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-2">Secure Password Manager</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">An encrypted password storage
+                                solution with AES-256 encryption and biometric authentication.</p>
+                            <div class="text-right mt-auto">
+                                <a href="https://github.com/Gauravsinghrajputt" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center space-x-2 text-accent-light dark:text-accent-dark hover:text-primary-light dark:hover:text-primary-dark transition">
+                                    <span class="font-semibold">View on</span>
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="card bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 flex flex-col">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1139be44-9da6-49af-bddd-eee80710c55b.png"
+                                alt="Flowchart visualization of encryption process with key exchange protocol and mathematical formulas in the background"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-2">Custom Encryption Protocol</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4 flex-grow">A hybrid encryption system
+                                combining AES and RSA with enhanced key exchange for secure communications.</p>
+                            <div class="text-right mt-auto">
+                                <a href="https://github.com/Gauravsinghrajputt" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center space-x-2 text-accent-light dark:text-accent-dark hover:text-primary-light dark:hover:text-primary-dark transition">
+                                    <span class="font-semibold">View on</span>
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="ctf" class="py-16 px-4 bg-gray-100 dark:bg-gray-700/30">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">CTF <span
+                        class="text-primary-light dark:text-primary-dark">Competitions</span></h2>
+                <div class="max-w-2xl mx-auto flex flex-col md:flex-row justify-center gap-8">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center card flex-1">
+                        <h3 class="text-xl font-bold">IIT Jammu CTF</h3>
+                        <p class="text-2xl font-bold text-primary-light dark:text-primary-dark my-2">155th Rank</p>
+                        <p class="text-gray-500 dark:text-gray-400">11 Apr 2025</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center card flex-1">
+                        <h3 class="text-xl font-bold">IIT Ropar CTF</h3>
+                        <p class="text-2xl font-bold text-secondary-light dark:text-secondary-dark my-2">Participation
+                        </p>
+                        <p class="text-gray-500 dark:text-gray-400">7-9 Feb 2025</p>
+                        <a href="https://app.truscholar.io/profile?credId=67d9733de339c19f62105fad" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-accent-light dark:text-accent-dark hover:underline mt-2 inline-block">View
+                            Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Get In <span
+                        class="text-primary-light dark:text-primary-dark">Touch</span></h2>
+                <p class="text-center text-lg text-gray-600 dark:text-gray-300 mb-12">Feel free to reach out or connect
+                    with me on social media.</p>
+
+                <div class="max-w-lg mx-auto">
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 h-full">
+                        <h3 class="text-xl font-bold mb-6 text-primary-light dark:text-primary-dark">Contact Information
+                        </h3>
+                        <div class="space-y-2">
+                            <a href="mailto:gauravkumaramtics@gmail.com"
+                                class="block p-4 rounded-lg transition-transform duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-gray-100 dark:hover:bg-gray-700/50">
+                                <div class="flex items-center">
+                                    <i
+                                        class="fas fa-envelope text-primary-light dark:text-primary-dark text-2xl w-8 text-center mr-4"></i>
+                                    <div>
+                                        <h4 class="font-medium">Email</h4>
+                                        <p class="text-gray-600 dark:text-gray-300">gauravkumaramtics@gmail.com</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="tel:+918427259874"
+                                class="block p-4 rounded-lg transition-transform duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-gray-100 dark:hover:bg-gray-700/50">
+                                <div class="flex items-center">
+                                    <i
+                                        class="fas fa-phone text-primary-light dark:text-primary-dark text-2xl w-8 text-center mr-4"></i>
+                                    <div>
+                                        <h4 class="font-medium">Phone</h4>
+                                        <p class="text-gray-600 dark:text-gray-300">+91 8427259874</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.google.com/maps/place/Surat,+Gujarat,+India" target="_blank"
+                                rel="noopener noreferrer"
+                                class="block p-4 rounded-lg transition-transform duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-gray-100 dark:hover:bg-gray-700/50">
+                                <div class="flex items-center">
+                                    <i
+                                        class="fas fa-map-marker-alt text-primary-light dark:text-primary-dark text-2xl w-8 text-center mr-4"></i>
+                                    <div>
+                                        <h4 class="font-medium">Location</h4>
+                                        <p class="text-gray-600 dark:text-gray-300">Surat, India</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <h3 class="text-xl font-bold mt-8 mb-6 text-primary-light dark:text-primary-dark">Connect With
+                            Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/Gauravsinghrajputt" target="_blank" rel="noopener noreferrer"
+                                class="bg-gray-100 dark:bg-gray-700 w-12 h-12 rounded-full flex items-center justify-center hover:bg-primary-light dark:hover:bg-primary-dark hover:text-white hover:-translate-y-1 hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-github text-xl text-primary-light dark:text-primary-dark"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/gaurav-singh-rajputt" target="_blank"
+                                rel="noopener noreferrer"
+                                class="bg-gray-100 dark:bg-gray-700 w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-500 hover:text-white hover:-translate-y-1 hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-linkedin-in text-xl text-primary-light dark:text-primary-dark"></i>
+                            </a>
+                            <a href="https://hackerone.com/gaurav_rajput" target="_blank" rel="noopener noreferrer"
+                                class="bg-gray-100 dark:bg-gray-700 w-12 h-12 rounded-full flex items-center justify-center hover:bg-red-500 hover:text-white hover:-translate-y-1 hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-bug text-xl text-primary-light dark:text-primary-dark"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 dark:bg-gray-800/50 border-t border-gray-300 dark:border-gray-700 py-8 px-4 mt-auto">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#" class="text-2xl font-bold text-primary-light dark:text-primary-dark">Gaurav<span
+                            class="text-accent-light dark:text-accent-dark">.</span></a>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-600 dark:text-gray-300">© 2025 Gaurav Singh Rajput. All rights reserved.</p>
+                    <p class="text-sm text-gray-500 mt-1">Built with passion and security in mind.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!localStorage.getItem('color-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+            themeToggle.checked = true;
+        } else {
+            html.classList.remove('dark');
+            themeToggle.checked = false;
+        }
+
+        themeToggle.addEventListener('change', function () {
+            if (this.checked) {
+                html.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+            } else {
+                html.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelectorAll('#mobile-menu a, nav .hidden.md\\:flex a');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // --- SCRIPT FOR ACTIVE NAVIGATION LINK HIGHLIGHTING ---
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('main section[id]');
+            const navLinks = document.querySelectorAll('nav .hidden.md\\:flex a');
+            const mobileNavLinks = document.querySelectorAll('#mobile-menu a');
+
+            const makeLinksInactive = (links) => {
+                links.forEach(link => {
+                    link.classList.remove('text-primary-light', 'dark:text-primary-dark', 'font-semibold');
+                });
+            };
+
+            const makeLinkActive = (id) => {
+                const activateLink = (links) => {
+                    links.forEach(link => {
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('text-primary-light', 'dark:text-primary-dark', 'font-semibold');
+                        }
+                    });
+                };
+                activateLink(navLinks);
+                activateLink(mobileNavLinks);
+            };
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.4
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                let activeSectionId = null;
+
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        activeSectionId = entry.target.id;
+                    }
+                });
+
+                // Find the topmost visible section
+                const visibleSections = Array.from(sections).filter(section => {
+                    const rect = section.getBoundingClientRect();
+                    return rect.top >= 0 && rect.bottom <= window.innerHeight;
+                });
+
+                if (visibleSections.length > 0) {
+                    activeSectionId = visibleSections[0].id;
+                } else if (activeSectionId) {
+                    // Fallback to the last intersecting section if none are fully visible
+                    // This handles cases for very large sections
+                }
+
+                if (activeSectionId) {
+                    makeLinksInactive(navLinks);
+                    makeLinksInactive(mobileNavLinks);
+                    makeLinkActive(activeSectionId);
+                }
+
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+
+</html>
